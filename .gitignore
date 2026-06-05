@@ -1,0 +1,7 @@
+node_modules/
+.env
+.DS_Store
+dist/
+build/
+backend/data/recipes.json.bak
+backend/test_cart.js

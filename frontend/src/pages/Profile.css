@@ -1,0 +1,134 @@
+.profile-page {
+  padding-bottom: 4rem;
+}
+
+.profile-card {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Avatar Section */
+.profile-avatar {
+  text-align: center;
+}
+
+.avatar-circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 auto 15px;
+  box-shadow: 0 8px 25px rgba(255, 107, 107, 0.35);
+}
+
+.profile-avatar h2 {
+  margin-bottom: 5px;
+}
+
+.email-text {
+  color: var(--text-light);
+}
+
+/* Detail Items */
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+@media (prefers-color-scheme: dark) {
+  .detail-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+}
+
+.detail-item div {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-label {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 3px;
+}
+
+.detail-value {
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+
+/* Edit Form */
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.edit-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.edit-form label {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+/* Actions */
+.profile-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.profile-actions .btn {
+  display: flex;
+  align-items: center;
+}
+
+.logout-btn {
+  color: #e74c3c !important;
+  border-color: #e74c3c !important;
+}
+
+.logout-btn:hover {
+  background: #e74c3c !important;
+  color: white !important;
+}
+
+.alert.success {
+  background: rgba(46, 204, 113, 0.15);
+  color: #2ecc71;
+  border: 1px solid rgba(46, 204, 113, 0.3);
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+}

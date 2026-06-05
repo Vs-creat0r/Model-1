@@ -1,0 +1,158 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.logo-icon {
+  color: var(--primary-color);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  font-weight: 500;
+  position: relative;
+  transition: var(--transition);
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--primary-color);
+  transition: var(--transition);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+.nav-links a.active {
+  color: var(--primary-color);
+}
+/* Login Button in Nav */
+.nav-login-btn {
+  background: var(--primary-color);
+  color: white !important;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.nav-login-btn::after {
+  display: none !important;
+}
+
+.nav-login-btn:hover {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+/* Profile Button in Nav */
+.nav-profile-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 107, 107, 0.1);
+  padding: 6px 16px;
+  border-radius: 50px;
+  color: var(--primary-color) !important;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.nav-profile-btn::after {
+  display: none !important;
+}
+
+.nav-profile-btn:hover {
+  background: rgba(255, 107, 107, 0.2);
+}
+
+/* Cart Button in Nav */
+.nav-cart-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 8px;
+  border-radius: 50%;
+  color: var(--text-color) !important;
+  transition: var(--transition);
+}
+
+.nav-cart-btn::after {
+  display: none !important;
+}
+
+.nav-cart-btn:hover {
+  background: rgba(0,0,0,0.05);
+  color: var(--primary-color) !important;
+}
+
+.nav-cart-btn.active {
+  color: var(--primary-color) !important;
+}
+
+.cart-badge {
+  position: absolute;
+  top: 0;
+  right: -2px;
+  background: var(--primary-color);
+  color: white;
+  font-size: 0.65rem;
+  font-weight: 700;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid var(--bg-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  .nav-cart-btn:hover {
+    background: rgba(255,255,255,0.1);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}
