@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { ShoppingCart, Trash2, Plus, Minus, ArrowRight } from 'lucide-react';
 import './Cart.css';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = '/api';
 
 const Cart = () => {
   const navigate = useNavigate();

@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Clock, Users, ShoppingCart, Check } from 'lucide-react';
 import './RecipeCard.css';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = '/api';
 
 const RecipeCard = ({ recipe }) => {
   const navigate = useNavigate();

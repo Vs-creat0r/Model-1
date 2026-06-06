@@ -7,7 +7,7 @@ const Home = () => {
   const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/recipes')
+    fetch('/api/recipes')
       .then(res => res.json())
       .then(data => setRecipes(data))
       .catch(err => console.error(err));

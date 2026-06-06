@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Mail, Lock, User, ChefHat } from 'lucide-react';
 import './Login.css';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = '/api';
 
 const Login = () => {
   const navigate = useNavigate();

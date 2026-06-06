@@ -3,7 +3,7 @@ import RecipeCard from '../components/RecipeCard';
 import SearchBar from '../components/SearchBar';
 import CategoryFilter from '../components/CategoryFilter';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = '/api';
 
 const NonVegRecipes = () => {
   const [recipes, setRecipes] = useState([]);

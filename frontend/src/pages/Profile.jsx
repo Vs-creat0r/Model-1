@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { User, Mail, ChefHat, Calendar, LogOut, Edit3, Save } from 'lucide-react';
 import './Profile.css';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = '/api';
 
 const Profile = () => {
   const navigate = useNavigate();
